@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion"
 import { ArrowDown } from "lucide-react"
+import { asset } from "@/lib/config"
 
 export default function Hero() {
   return (
@@ -15,7 +16,7 @@ export default function Hero() {
           playsInline
           className="h-full w-full object-cover"
         >
-          <source src="/assets/bg-home-en+ar.MOV" type="video/mp4" />
+          <source src={asset("/assets/bg-home-en+ar.MOV")} type="video/mp4" />
         </video>
         <div className="absolute inset-0 bg-background/75" />
         <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-transparent to-background" />

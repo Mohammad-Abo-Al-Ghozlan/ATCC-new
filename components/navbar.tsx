@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { Menu, X } from "lucide-react"
+import { asset } from "@/lib/config"
 
 const navLinks = [
   { href: "#about", label: "About" },
@@ -52,7 +53,7 @@ export default function Navbar() {
       >
         <div className="mx-auto max-w-7xl flex items-center justify-between px-6 py-4 lg:px-8">
           <a href="#" className="flex items-center gap-3 group">
-            <img src="/assets/atcc-logo-n.png" alt="ATCC Logo" className="h-8 w-auto" />
+            <img src={asset("/assets/atcc-logo-n.png")} alt="ATCC Logo" className="h-8 w-auto" />
             <span className="text-foreground font-bold text-lg tracking-tight">ATCC</span>
           </a>
 
@@ -99,7 +100,7 @@ export default function Navbar() {
           >
             <div className="flex items-center justify-between px-6 py-4">
               <div className="flex items-center gap-3">
-                <img src="/assets/atcc-logo-n.png" alt="ATCC Logo" className="h-8 w-auto" />
+                <img src={asset("/assets/atcc-logo-n.png")} alt="ATCC Logo" className="h-8 w-auto" />
                 <span className="text-foreground font-bold text-lg tracking-tight">ATCC</span>
               </div>
               <button

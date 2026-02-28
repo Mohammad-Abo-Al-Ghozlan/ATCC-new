@@ -2,21 +2,22 @@
 
 import { useRef } from "react"
 import { motion, useInView } from "framer-motion"
+import { asset } from "@/lib/config"
 
 const partners = [
-  { name: "ARCO Construction", logo: "/assets/contributes/arco.jpeg" },
-  { name: "ASG Group", logo: "/assets/contributes/asg.jpeg" },
-  { name: "COBRA Engineering", logo: "/assets/contributes/cobra.jpeg" },
-  { name: "Jada Tatweer", logo: "/assets/contributes/jada-tatweer.jpeg" },
-  { name: "Al Areef", logo: "/assets/contributes/l5areef.jpeg" },
-  { name: "May Del", logo: "/assets/contributes/may-del.jpeg" },
-  { name: "Rayis", logo: "/assets/contributes/rayis.jpeg" },
-  { name: "SA Kharaba", logo: "/assets/contributes/sa-khrba.jpeg" },
-  { name: "Sama China", logo: "/assets/contributes/sama-china.jpeg" },
-  { name: "Sama", logo: "/assets/contributes/sama.jpeg" },
-  { name: "Tedagua", logo: "/assets/contributes/tedagua.jpeg" },
-  { name: "NEOM", logo: "/assets/contributes/neom.jpeg" },
-  { name: "NWC", logo: "/assets/contributes/NWC.jpeg" },
+  { name: "ARCO Construction", logo: asset("/assets/contributes/arco.jpeg") },
+  { name: "ASG Group", logo: asset("/assets/contributes/asg.jpeg") },
+  { name: "COBRA Engineering", logo: asset("/assets/contributes/cobra.jpeg") },
+  { name: "Jada Tatweer", logo: asset("/assets/contributes/jada-tatweer.jpeg") },
+  { name: "Al Areef", logo: asset("/assets/contributes/l5areef.jpeg") },
+  { name: "May Del", logo: asset("/assets/contributes/may-del.jpeg") },
+  { name: "Rayis", logo: asset("/assets/contributes/rayis.jpeg") },
+  { name: "SA Kharaba", logo: asset("/assets/contributes/sa-khrba.jpeg") },
+  { name: "Sama China", logo: asset("/assets/contributes/sama-china.jpeg") },
+  { name: "Sama", logo: asset("/assets/contributes/sama.jpeg") },
+  { name: "Tedagua", logo: asset("/assets/contributes/tedagua.jpeg") },
+  { name: "NEOM", logo: asset("/assets/contributes/neom.jpeg") },
+  { name: "NWC", logo: asset("/assets/contributes/NWC.jpeg") },
 ]
 
 export default function Partners() {

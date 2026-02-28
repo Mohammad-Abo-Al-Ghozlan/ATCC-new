@@ -1,3 +1,5 @@
+import { BASE_PATH } from "./config"
+
 export interface Project {
   id: string
   title: string
@@ -13,6 +15,7 @@ export interface Project {
  */
 function assetPath(relativePath: string): string {
   return (
+    BASE_PATH +
     "/assets/" +
     relativePath
       .split("/")

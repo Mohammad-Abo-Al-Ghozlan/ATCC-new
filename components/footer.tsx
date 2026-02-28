@@ -1,6 +1,7 @@
 "use client"
 
 import { ArrowUp } from "lucide-react"
+import { asset } from "@/lib/config"
 
 const footerLinks = [
   { label: "About", href: "#about" },
@@ -18,7 +19,7 @@ export default function Footer() {
           {/* Brand */}
           <div className="max-w-sm">
             <div className="flex items-center gap-3 mb-4">
-              <img src="/assets/atcc-logo-n.png" alt="ATCC Logo" className="h-8 w-auto" />
+              <img src={asset("/assets/atcc-logo-n.png")} alt="ATCC Logo" className="h-8 w-auto" />
               <span className="text-foreground font-bold text-lg tracking-tight">ATCC</span>
             </div>
             <p className="text-sm text-muted-foreground leading-relaxed">
