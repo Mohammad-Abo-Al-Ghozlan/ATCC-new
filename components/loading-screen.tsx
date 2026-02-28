@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react"
 import { motion, AnimatePresence } from "framer-motion"
+import { asset } from "@/lib/config"
 
 export default function LoadingScreen() {
   const [loading, setLoading] = useState(true)
@@ -25,9 +26,8 @@ export default function LoadingScreen() {
               initial={{ scale: 0, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
-              className="h-16 w-16 bg-primary flex items-center justify-center"
             >
-              <span className="text-primary-foreground font-extrabold text-2xl">A</span>
+              <img src={asset("/assets/atcc-logo-n.png")} alt="ATCC Logo" className="h-16 w-auto" />
             </motion.div>
 
             <motion.div
